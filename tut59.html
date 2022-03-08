@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascriptt dates and time</title>
+    <style>
+        .container {
+            font-size: 23px;
+            background-color: rgb(54, 233, 93);
+            border: 2px solid grey;
+            padding: 34px;
+            margin: 4px;
+            text-align: center;
+        }
+
+        #time {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        This is a current time <span id="time"> </span>
+        <script>
+            console.log("This is a tutuorial 59")
+            let dt = new Date();
+            console.log(dt);
+
+            // let newDate = new Date(year, month, date, hours, minutes, seconds, milliseconds);
+            let newDate = new Date(2023, 2, 12, 3, 34, 34, 23);
+            console.log(newDate);
+
+            let yr = newDate.getFullYear();
+            console.log("This is the year ", yr);
+
+            let dt2 = newDate.getDate();
+            console.log("This is the date ", dt2);
+
+            let mt = newDate.getMonth();
+            console.log("This is the month ", mt);
+
+            let hr = newDate.getHours();
+            console.log("This is the hour ", hr);
+
+            newDate.setDate(30);
+            console.log(newDate);
+            setInterval(updateTime, 1000);
+
+            function updateTime() {
+                time.innerHTML = new Date();
+            }
+        </script>
+</body>
+
+</html>

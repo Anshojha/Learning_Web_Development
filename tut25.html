@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+    .container{
+        border: 6sspx solid rgb(5, 145, 47);
+        background-color: khaki;
+        height:auto;
+        
+    }
+
+        /* positon: static(DEFAULT), absolute, relative, stickey , fixed  */
+    .box{
+        display: inline-block;
+        border: 2px solid red;
+        width: 150px;
+        height: 150px;
+        margin: 4px;
+    }
+
+    #box3{
+        /* relative:Position the element relative to its normal position and will leave a gap at a nornal posotion */
+        /* position: relative; */
+
+        /* absolute: Position the element relative to its positionof its first parent */
+        /* position: absolute; */
+        /* top: 34px ;
+        left: 34px; */
+
+        /* fixed:Position the element relative to the browser window */
+        /* position: fixed;
+        right: 4px;
+        bottom: 4px;
+         */
+
+        /* sticky: */
+        position:sticky;
+        top: 3pxs;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="box" id="box1">1.About Us</div>
+        <div class="box" id="box2">2.Contact Us</div>
+        <div class="box" id="box3">3.Chat with us</div>
+        <div class="box" id="box4">4.Feedback</div>
+        <BR></BR>
+        <div class="box" id="box4">4.Feedback</div>
+        <div class="box" id="box4">4.Feedback</div>
+
+    </div>
+    </body>
+</html>

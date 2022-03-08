@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript String Function</title>
+</head>
+<body>
+    <script>
+        var str = "This is a String";
+        console.log(str);
+        // First occurance of substring
+        var position = str.indexOf("is");
+        console.log(position)
+        var position2 = str.indexOf("a");
+        console.log(position2)
+        var position2 = str.lastIndexOf("a");
+        console.log(position2)
+
+        var substr = str.slice(5,8);
+        console.log(substr)
+
+        var substr = str.substr(5,8);
+        console.log(substr)
+
+        var replaced= str.replace("String","Ansh ");
+        console.log(str)
+        console.log(replaced)
+    </script>
+</body>
+</html>

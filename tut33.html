@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after pseudo selectors </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+
+        body{
+            margin: 0px;
+            padding: 0px;
+            
+            background-color: black;
+            color: white;
+        }
+        header ::before{
+            background-image: url("https://source.unsplash.com/user/erondu/1600x900") no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width:100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.3;
+        }
+        .navigation{
+            font-family: 'Style Script', cursive;
+            display: flex;
+            font-size: 20px;
+        }
+
+        li{
+            list-style: none;
+            padding: 20px 34px;
+        }
+        
+        section{
+            
+            margin: 3px 23px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 233px;
+            justify-content: center;
+        }
+        h1{
+            font-size: 2em;
+        }
+
+        /* section ::after{
+            content: "This is a content ";
+        } */
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home </li>
+                <li class="item">About Us</li>
+                <li class="item">Service</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+
+    </header>
+        <section>
+            <h1>Welcome to coding World</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi esse doloribus cupiditate sint
+                reprehenderit maxime qui non, alias perspiciatis, consequuntur consequatur vel vitae dolores saepe.
+                Repellat rerum unde, obcaecati dolorem dolorum molestias itaque quibusdam?</p>
+        </section>
+        <hr>
+</body>
+
+</html>

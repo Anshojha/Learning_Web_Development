@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+
+<body>
+    <div class="container">
+        This is a arrow function tutuorial
+    </div>
+    <script>
+        // Arrow Function 
+        let sum = (a, b) => {
+            return a + b;
+        }
+        greet = () => {
+            console.log("Good Morning!!");
+        }
+        // function greet() {
+        //     console.log("Good Morning!!");
+        // }
+        setInterval(() => {
+
+            console.log("We are under settimeout");
+
+        }, 4000);
+        let obj1 = {
+            names: ["ansh", "Shives", "Aryan", "ankit"],
+            speak() {
+                this.names.forEach((stud) => {
+                    console.log("this is nothing " + stud);
+                })
+            }
+        }
+        obj1.speak();
+    </script>
+</body>
+
+</html>

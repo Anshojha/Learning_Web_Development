@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope and Conditional</title>
+</head>
+
+<body>
+    <div>
+        <ul>
+            <li>Item-1</li>
+            <li>Item-2</li>
+            <li>Item-3</li>
+            <li>Item-4</li>
+            <li>Item-5</li>
+            <li>Item-6</li>
+            <li>Item-7</li>
+        </ul>
+    </div>
+    <script>
+        var string1 = "This is a string1";
+        var string1 = "This is a string2";
+        console.log(string1);
+        let a = "u"
+        {
+            let a = "u6"
+            console.log(a)
+        }
+        console.log(a)
+
+        const b = "This is a constant cannot be changed"
+        //     // b = "I want to changed b contant"
+        // OutPut for the above code execution
+        //     tut51.html:33 
+
+        //    Uncaught TypeError: Assignment to constant variable.
+        console.log(b)
+
+        let age = 2;
+        if (age > 16) {
+            console.log("You can drink soft water for free");
+        }
+        else if (age == 2) {
+            console.log("Your age is 2 you are highly prohibited and a glasss of milk is free for you");
+        }
+        else {
+            console.log("You can drink water with soda because alchol is not allowed here");
+        }
+
+
+        const cups = 4;
+        switch (cups) {
+            case 4:
+                console.log("The number of cups is 4");
+                break;
+
+            case 23:
+                console.log("The number of cups is 23");
+                break;
+
+            case 44:
+                console.log("The number of cups is 44");
+            // break;
+            // Here we are removing break so every code is get executed after the break which is not necessary to RUN
+
+            case 42:
+                console.log("The number of cups is 42");
+                break;
+
+            default:
+                console.log("The value of cups is not matching to any of these number 4 23 44 42 ");
+                break;
+        }
+    </script>
+</body>
+
+</html>

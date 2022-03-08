@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        *{
+            box-sizing:  border-box ;
+        }
+
+        .container{
+            width: 900px;
+            border: 3px solid purple;
+            margin: 33px solid black;
+            background-color: rgb(243, 198, 158);
+            background-size: 1000px;
+        }
+
+        .items{
+            border: 3px solid gray;
+            margin: 12pz 3px;
+            padding: 12px 3px;
+            background-color: rgb(241, 177, 177);
+        }
+
+        .body{
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        #fruits{
+            float: left;
+            width: 48%;
+        }
+
+        #computer{
+             
+            width: 48%;
+        }
+
+        #stationery{
+            /* float: left; */
+            clear: both;
+            width: 100%;
+        }
+
+        h1{
+            margin: inherit;
+            width: 455px;
+        }
+
+        p h3{
+            /* text-align: right;
+            text-align: left;
+            text-align: center; */
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Welcome to my Store</h1>
+        <div id="fruits" class="items">
+            <h2>Fruits</h2>
+            <p id="fruitspara" class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, nostrum deleniti rerum repellendus eius dignissimos cum corporis sunt accusantium rem quibusdam aliquid ab dolorem excepturi asperiores perspiciatis omnis laudantium dolor. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolores vitae laborum nam, aperiam iure temporibus delectus voluptatem quisquam tempore corporis alias corrupti quae, praesentium ex provident nemo modi ducimus?</p>
+        </div>
+        <div id="computer" class="items">
+            <h2>Computer</h2>
+            <p id="computerpara" class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, nostrum deleniti rerum repellendus eius dignissimos cum corporis sunt accusantium rem quibusdam aliquid ab dolorem excepturi asperiores perspiciatis omnis laudantium dolor. Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque unde cumque ipsum, voluptate et minus maiores reiciendis dicta id amet accusamus commodi ab sunt dolorem harum deleniti in necessitatibus praesentium.</p>
+        </div>
+        <div id="stationery" class="items">
+            <h2>Stationery</h2>
+            <p id="stationerypara" class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, nostrum deleniti rerum repellendus eius dignissimos cum corporis sunt accusantium rem quibusdam aliquid ab dolorem excepturi asperiores perspiciatis omnis laudantium dolor.</p>
+        </div>
+        <div id="glases" class="items">
+            <h2>glases</h2>
+            <p id="glasespara" class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, nostrum deleniti rerum repellendus eius dignissimos cum corporis sunt accusantium rem quibusdam aliquid ab dolorem excepturi asperiores perspiciatis omnis laudantium dolor.</p>
+        </div>
+
+    </div>
+</body>
+</html>
